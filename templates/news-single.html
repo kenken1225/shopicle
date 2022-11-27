@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"OPEN CAFE"</title>
+    <meta name="open cafe" content="カフェ開業">
+    <!--reset.css-->
+    <link rel="stylesheet" href="/CSS/reset.css">
+    <!-- SNSアイコンのFont Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Damion&family=Noto+Serif+JP:wght@400;500;600;700&family=Patua+One&display=swap"
+        rel="stylesheet">
+    <!--  Start drawer.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css"
+        media="screen and (max-width:767px)">
+    <!-- jquery & iScroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <!-- drawer.js  End-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+    <!-- Swiper Slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js"></script>
+    <!--original CSS & jQuery-->
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+
+<body class="is-drawerActive">
+    <div class="body-lg-wrapper">
+        <!-- ドロワー -->
+        <header id="js-header" class="header">
+            <div id="js-drawer-bg" class="drawer-bg"></div>
+            <div id="header" class="header-container">
+                <p class="header-logo">
+                    <a href="#" class="header-logo-link"></a>
+                </p>
+                <nav class="header-nav-menu" id="nav-active">
+                    <ul class="header-nav">
+                        <li class="header-nav-item">
+                            <a href="" class="header-nav-item-link">
+                                <span class="header-nav-item-en">TOP</span>
+                                <span class="header-nav-item-jp">トップ</span>
+                            </a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="" class="header-nav-item-link">
+                                <span class="header-nav-item-en">CONCEPT</span>
+                                <span class="header-nav-item-jp">コンセプト</span>
+                            </a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="" class="header-nav-item-link">
+                                <span class="header-nav-item-en">MENU</span>
+                                <span class="header-nav-item-jp">メニュー</span>
+                            </a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="" class="header-nav-item-link">
+                                <span class="header-nav-item-en">NEWS</span>
+                                <span class="header-nav-item-jp">ニュース</span>
+                            </a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="" class="header-nav-item-link">
+                                <span class="header-nav-item-en">SHOP</span>
+                                <span class="header-nav-item-jp">ショップ</span>
+                            </a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="" class="header-nav-item-link">
+                                <span class="header-nav-item-en">GIFT</span>
+                                <span class="header-nav-item-jp">ギフト</span>
+                            </a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="" class="header-nav-item-link">
+                                <span class="header-nav-item-en">CONTACT</span>
+                                <span class="header-nav-item-jp">お問い合わせ</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-sns">
+                    <ul class="header-sns-list">
+                        <li class="header-sns-item">
+                            <i class="fa-brands fa-twitter header-sns-item-link" aria-label="twitter"></i>
+                        </li>
+                        <li class="header-sns-item">
+                            <i class="fa-brands fa-instagram header-sns-item-link" aria-label="facebook"></i>
+                        </li>
+                        <li class="header-sns-item">
+                            <i class="fa-brands fa-youtube header-sns-item-link" aria-label="youtube"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- ドロワーボタン -->
+        <div id="toggle">
+            <div id="toggle-box">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!-- ヘッダースマホ版 -->
+        <div class="header-sp header-top-concept header-sp-none">
+            <p ref="#" class="header-sp-logo">
+                <img src="/img/logo_light.png" alt="header-sp-logo" class="header-sp-logo-img">
+            </p>
+        </div>
+
+        <!----------------------------
+         TOP (NEWS)
+        -------------------------------->
+        <main>
+            <!-- トップ（メイン） -->
+            <div class="top-view">
+                <div class="top-view-wrapper">
+                    <h1 class="top-view-title-box">
+                        <p class="h2-title top-view-title">NEWS</p>
+                        <p class="h2-subtitle top-view-subtitle ">お知らせ</p>
+                    </h1>
+                    <picture class="top-view-img">
+                        <source media="(max-width: 767px)" srcset="/img/Concept/img_firstview_news_sp.png">
+                        <img src="/img/News/img_firstview_news.png" alt="スライダー画像2">
+                    </picture>
+                </div>
+            </div>
+
+
+            <!----------------
+            NEWS
+            ------------------->
+            <div class="l-news-single-wrapper">
+                <div class="news-post-img-box">
+                    <img src="/img/TOP/img_card.png" alt="">
+                </div>
+                <h1 class="news-post-title">クリーミーな口溶けの食パンと最高のコーヒーをできる手作りカフェダミークリーミーな口溶けの食パンと最高のコーヒーをできる手作りカフェ</h1>
+                <div class="news-post-info">
+                    <time class="news-post-date" datetime="2022-01-01">2022.01.01</time>
+                    <div class="news-post-category">カテゴリ名</div>
+                </div>
+                <div class="news-post-body">
+                    <div class="news-post-sub-body">
+                        <p>国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。
+                        </p>
+                        <figure class="news-post-body-img">
+                            <img src="/img/menu/img_special_pasta3.png" alt="">
+                        </figure>
+                        <p>国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。
+                        </p>
+                        <h2 class="news-post-body-h2">h2タイトル_テキストテキストテキストテキスト</h2>
+                        <p>国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。
+                        </p>
+                        <h3 class="news-post-body-h3">テキストテキストテキストテキスト</h3>
+                        <p>国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。
+                        </p>
+                        <h4 class="news-post-body-h4">テキストテキストテキストテキスト</h4>
+                        <p>国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。
+                        </p>
+                        <ul>
+                            <li>リスト</li>
+                            <li>リスト</li>
+                            <li>リスト</li>
+                        </ul>
+                        <blockquote class="news-post-body-quote">
+                            <p>国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。
+                            </p>
+                            <cite>出典元：http://example.com</cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+             <!-- アクセス -->
+             <div class="access-lg-wrapper access-lg-wrapper-concept ">
+                <section class="access">
+                    <div class="access-wrapper">
+                        <h2 class="h2-title access-title">ACCESS</h2>
+                        <p class="h2-subtitle">アクセス</p>
+                        <div class="access-bg-box">
+                            <div class="access-sub-wrapper">
+                                <div class="access-map">
+                                    <div class="access-map-container">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.037028863611!2d139.578023915201!3d35.70070638651103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ee39b555205f%3A0xabb26a0a2fbda595!2z44CSMTgwLTAwMDMg5p2x5Lqs6YO95q2m6JS16YeO5biC5ZCJ56Wl5a-65Y2X55S677yR5LiB55uu!5e0!3m2!1sja!2sjp!4v1659531177336!5m2!1sja!2sjp"
+                                            width="600" height="450" style="border:0;" allowfullscreen=""
+                                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                </div>
+                                <div class="access-tables">
+                                    <dl class="access-table-box">
+                                        <div class="access-table-item">
+                                            <dt class="access-table-content">住所</dt>
+                                            <dd class="access-table-description">〒000-0000 <br>
+                                                東京都武蔵野市吉祥寺南町一丁目</dd>
+                                        </div>
+                                        <div class="access-table-item">
+                                            <dt class="access-table-content">TEL</dt>
+                                            <dd class="access-table-description">0123-456-789</dd>
+                                        </div>
+                                        <div class="access-table-item">
+                                            <dt class="access-table-content">Mail</dt>
+                                            <dd class="access-table-description">example@mail.com</dd>
+                                        </div>
+                                    </dl>
+                                    <dl class="access-table-box">
+                                        <div class="access-table-item">
+                                            <dt class="access-table-content">営業時間</dt>
+                                            <dd class="access-table-description">7:00〜21:00 <br>
+                                                ※ラストオーダー 20:30</dd>
+                                        </div>
+                                        <div class="access-table-item">
+                                            <dt class="access-table-content">定休日</dt>
+                                            <dd class="access-table-description">水曜日</dd>
+                                        </div>
+                                        <div class="access-table-item">
+                                            <dt class="access-table-content">座席</dt>
+                                            <dd class="access-table-description">テーブル20席 ／ カウンター席6席</dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- フッター -->
+        <footer class="footer">
+            <div class="footer-container">
+                <a href="" class="pagetop">
+                    <img src="/img/icons/icon_arrow-top.png" alt="page-top">
+                </a>
+                <!-- <div class="footer-pagetop">
+                    <a href="" class="footer-pagetop-link is-show">
+                        <img src="/img/icons/icon_arrow-top.png" alt="page-top">
+                    </a>
+                </div> -->
+                <div class="main-sns">
+                    <ul class="main-sns-list">
+                        <li class="main-sns-item">
+                            <i class="fa-brands fa-twitter main-sns-item-link" aria-label="twitter"></i>
+                        </li>
+                        <li class="main-sns-item">
+                            <i class="fa-brands fa-instagram main-sns-item-link" aria-label="facebook"></i>
+                        </li>
+                        <li class="main-sns-item">
+                            <i class="fa-brands fa-youtube main-sns-item-link" aria-label="youtube"></i>
+                        </li>
+                    </ul>
+                </div>
+                <p class="footer-text">&copy;2000-2021 open cafe. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+    </div>
+    <!-- スライダーカーセル、 -->
+    <script src="https: ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https: cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
+    <script src="/JS/wow.js"></script><!-- Script.jsより上に置く -->
+    <script src="/JS/style.js"></script>
+</body>
+
+</html>

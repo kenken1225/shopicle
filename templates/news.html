@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"OPEN CAFE"</title>
+    <meta name="open cafe" content="カフェ開業">
+    <!--reset.css-->
+    <link rel="stylesheet" href="/CSS/reset.css">
+    <!-- SNSアイコンのFont Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Damion&family=Noto+Serif+JP:wght@400;500;600;700&family=Patua+One&display=swap"
+        rel="stylesheet">
+    <!--  Start drawer.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css"
+        media="screen and (max-width:767px)">
+    <!-- jquery & iScroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <!-- drawer.js  End-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+    <!-- Swiper Slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js"></script>
+    <!--original CSS & jQuery-->
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+
+<body class="is-drawerActive">
+    <div class="body-lg-wrapper">
+        <!-- ドロワー -->
+        <header id="js-header" class="header">
+            <div id="js-drawer-bg" class="drawer-bg"></div>
+            <div id="header" class="header-container">
+                <p class="header-logo">
+                    <a href="#" class="header-logo-link"></a>
+                </p>
+                <nav class="header-nav-menu" id="nav-active">
+                    <ul class="header-nav">
+                        <li class="header-nav-item">
+                            <a href="" class="header-nav-item-link">
+                                <span class="header-nav-item-en">TOP</span>
+                                <span class="header-nav-item-jp">トップ</span>
+                            </a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="" class="header-nav-item-link">
+                                <span class="header-nav-item-en">CONCEPT</span>
+                                <span class="header-nav-item-jp">コンセプト</span>
+                            </a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="" class="header-nav-item-link">
+                                <span class="header-nav-item-en">MENU</span>
+                                <span class="header-nav-item-jp">メニュー</span>
+                            </a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="" class="header-nav-item-link">
+                                <span class="header-nav-item-en">NEWS</span>
+                                <span class="header-nav-item-jp">ニュース</span>
+                            </a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="" class="header-nav-item-link">
+                                <span class="header-nav-item-en">SHOP</span>
+                                <span class="header-nav-item-jp">ショップ</span>
+                            </a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="" class="header-nav-item-link">
+                                <span class="header-nav-item-en">GIFT</span>
+                                <span class="header-nav-item-jp">ギフト</span>
+                            </a>
+                        </li>
+                        <li class="header-nav-item">
+                            <a href="" class="header-nav-item-link">
+                                <span class="header-nav-item-en">CONTACT</span>
+                                <span class="header-nav-item-jp">お問い合わせ</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-sns">
+                    <ul class="header-sns-list">
+                        <li class="header-sns-item">
+                            <i class="fa-brands fa-twitter header-sns-item-link" aria-label="twitter"></i>
+                        </li>
+                        <li class="header-sns-item">
+                            <i class="fa-brands fa-instagram header-sns-item-link" aria-label="facebook"></i>
+                        </li>
+                        <li class="header-sns-item">
+                            <i class="fa-brands fa-youtube header-sns-item-link" aria-label="youtube"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- ドロワーボタン -->
+        <div id="toggle">
+            <div id="toggle-box">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!-- ヘッダースマホ版 -->
+        <div class="header-sp header-top-concept header-sp-none">
+            <p ref="#" class="header-sp-logo">
+                <img src="/img/logo_light.png" alt="header-sp-logo" class="header-sp-logo-img">
+            </p>
+        </div>
+
+        <!----------------------------
+         TOP (NEWS)
+        -------------------------------->
+        <main>
+            <!-- トップ（メイン） -->
+            <div class="top-view">
+                <div class="top-view-wrapper">
+                    <h1 class="top-view-title-box">
+                        <p class="h2-title top-view-title">NEWS</p>
+                        <p class="h2-subtitle top-view-subtitle ">お知らせ</p>
+                    </h1>
+                    <picture class="top-view-img">
+                        <source media="(max-width: 767px)" srcset="/img/Concept/img_firstview_news_sp.png">
+                        <img src="/img/News/img_firstview_news.png" alt="スライダー画像2">
+                    </picture>
+                </div>
+            </div>
+
+            <!----------------
+            NEWS
+            ------------------->
+            <div class="l-news-wrapper">
+                    <!-- カテゴリー名 -->
+                    <div class="news-category-wrapper">
+                        <div class="news-category-box">
+                            <div class="news-category-title-box">
+                                <h2 class="news-category-top-title">
+                                    カテゴリー名
+                                </h2>
+                            </div>
+                            <div class="news-item-other top-news-item-other">
+                                <div class="news-item-others top-news-others">
+                                    <article class="news-card">
+                                        <a href="#" class="news-item-link">
+                                            <p class="p-tag2">
+                                                <span class="p-tag_text2">カテゴリー</span>
+                                            </p>
+                                            <div class="news-card-img">
+                                                <img src="/img/TOP/img_card.png" alt="" class="news-item-icon">
+                                            </div>
+                                            <div class="news-card-body">
+                                                <h3 class="news-item-title news-item-subtitle">
+                                                    国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。
+                                                </h3>
+                                                <p class="news-item-date"> <time datetime="2019-02-01"></time>2022-09-01
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </div>
+                                <div class="news-item-others top-news-others">
+                                    <article class="news-card">
+                                        <a href="#" class="news-item-link">
+                                            <p class="p-tag2">
+                                                <span class="p-tag_text2">カテゴリー</span>
+                                            </p>
+                                            <div class="news-card-img">
+                                                <img src="/img/TOP/img_card.png" alt="" class="news-item-icon">
+                                            </div>
+                                            <div class="news-card-body">
+                                                <h3 class="news-item-title news-item-subtitle">
+                                                    国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。
+                                                </h3>
+                                                <p class="news-item-date"> <time datetime="2019-02-01"></time>2022-09-01
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </div>
+                                <div class="news-item-others top-news-others">
+                                    <article class="news-card">
+                                        <a href="#" class="news-item-link">
+                                            <p class="p-tag2">
+                                                <span class="p-tag_text2">カテゴリー</span>
+                                            </p>
+                                            <div class="news-card-img">
+                                                <img src="/img/TOP/img_card.png" alt="" class="news-item-icon">
+                                            </div>
+                                            <div class="news-card-body">
+                                                <h3 class="news-item-title news-item-subtitle">
+                                                    国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。
+                                                </h3>
+                                                <p class="news-item-date"> <time datetime="2019-02-01"></time>2022-09-01
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </div>
+                                <div class="news-item-others top-news-others">
+                                    <article class="news-card">
+                                        <a href="#" class="news-item-link">
+                                            <p class="p-tag2">
+                                                <span class="p-tag_text2">カテゴリー</span>
+                                            </p>
+                                            <div class="news-card-img">
+                                                <img src="/img/TOP/img_card.png" alt="" class="news-item-icon">
+                                            </div>
+                                            <div class="news-card-body">
+                                                <h3 class="news-item-title news-item-subtitle">
+                                                    ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。
+                                                </h3>
+                                                <p class="news-item-date"> <time datetime="2019-02-01"></time>2022-09-01
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </div>
+                                <div class="news-item-others top-news-others">
+                                    <article class="news-card">
+                                        <a href="#" class="news-item-link">
+                                            <p class="p-tag2">
+                                                <span class="p-tag_text2">カテゴリー</span>
+                                            </p>
+                                            <div class="news-card-img">
+                                                <img src="/img/TOP/img_card.png" alt="" class="news-item-icon">
+                                            </div>
+                                            <div class="news-card-body">
+                                                <h3 class="news-item-title news-item-subtitle">
+                                                    ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。
+                                                </h3>
+                                                <p class="news-item-date"> <time datetime="2019-02-01"></time>2022-09-01
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </div>
+                                <div class="news-item-others top-news-others">
+                                    <article class="news-card">
+                                        <a href="#" class="news-item-link">
+                                            <p class="p-tag2">
+                                                <span class="p-tag_text2">カテゴリー</span>
+                                            </p>
+                                            <div class="news-card-img">
+                                                <img src="/img/TOP/img_card.png" alt="" class="news-item-icon">
+                                            </div>
+                                            <div class="news-card-body">
+                                                <h3 class="news-item-title news-item-subtitle">
+                                                    ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。
+                                                </h3>
+                                                <p class="news-item-date"> <time datetime="2019-02-01"></time>2022-09-01
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </div>
+                                <div class="news-item-others top-news-others">
+                                    <article class="news-card">
+                                        <a href="#" class="news-item-link">
+                                            <p class="p-tag2">
+                                                <span class="p-tag_text2">カテゴリー</span>
+                                            </p>
+                                            <div class="news-card-img">
+                                                <img src="/img/TOP/img_card.png" alt="" class="news-item-icon">
+                                            </div>
+                                            <div class="news-card-body">
+                                                <h3 class="news-item-title news-item-subtitle">
+                                                    ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。
+                                                </h3>
+                                                <p class="news-item-date"> <time datetime="2019-02-01"></time>2022-09-01
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </div>
+                                <div class="news-item-others top-news-others">
+                                    <article class="news-card">
+                                        <a href="#" class="news-item-link">
+                                            <p class="p-tag2">
+                                                <span class="p-tag_text2">カテゴリー</span>
+                                            </p>
+                                            <div class="news-card-img">
+                                                <img src="/img/TOP/img_card.png" alt="" class="news-item-icon">
+                                            </div>
+                                            <div class="news-card-body">
+                                                <h3 class="news-item-title news-item-subtitle">
+                                                    ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。
+                                                </h3>
+                                                <p class="news-item-date"> <time datetime="2019-02-01"></time>2022-09-01
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </div>
+                                <div class="news-item-others top-news-others">
+                                    <article class="news-card">
+                                        <a href="#" class="news-item-link">
+                                            <p class="p-tag2">
+                                                <span class="p-tag_text2">カテゴリー</span>
+                                            </p>
+                                            <div class="news-card-img">
+                                                <img src="/img/TOP/img_card.png" alt="" class="news-item-icon">
+                                            </div>
+                                            <div class="news-card-body">
+                                                <h3 class="news-item-title news-item-subtitle">
+                                                    ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。
+                                                </h3>
+                                                <p class="news-item-date"> <time datetime="2019-02-01"></time>2022-09-01
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </div>
+                                <div class="news-item-others top-news-others">
+                                    <article class="news-card">
+                                        <a href="#" class="news-item-link">
+                                            <p class="p-tag2">
+                                                <span class="p-tag_text2">カテゴリー</span>
+                                            </p>
+                                            <div class="news-card-img">
+                                                <img src="/img/TOP/img_card.png" alt="" class="news-item-icon">
+                                            </div>
+                                            <div class="news-card-body">
+                                                <h3 class="news-item-title news-item-subtitle">
+                                                    ダミー_国内外から賞賛を受けた選りすぐりのデザイナーが集結し、ガーデニングの設計・建築から料理まで、あらゆる空間が誕生。
+                                                </h3>
+                                                <p class="news-item-date"> <time datetime="2019-02-01"></time>2022-09-01
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 記事のボタン -->
+                        <div class="l-pager">
+                            <nav class="p-pager">
+                                <span aria-current="page" class="page-numbers current">1</span>
+                                <a href="" class="page-numbers"></a>
+                                <a href="" class="page-numbers">次</a>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <!-- 右のボックス asideは、サイドバーで使われるx-->
+                    <aside class="news-category-box-wrapper">
+                        <div class="news-articles-wrapper">
+                            <div class="news-articles-box">
+                                <div class="news-articles-title-box">
+                                    <h2 class="news-articles-title">
+                                        最近の記事
+                                    </h2>
+                                </div>
+                                <div class="news-articles-list">
+                                    <div class="news-category-others">
+                                        <article class="main-visual-card">
+                                            <a href="" class="main-visual-card-link top-menu-card-link">
+                                                <div class="main-visual-card-link-img top-news-card-link-img">
+                                                    <img src="/img/TOP/img_card.png" alt=""
+                                                        class="main-visual-card-img top-news-card-img">
+                                                </div>
+                                                <div class="main-visual-card-link-content top-news-card-link-content">
+                                                    <p class="main-visual-box-text top-menu-box-text">
+                                                        最新複製 #2 複製 #cat4 h1タイトル_ダミークリー... </p>
+                                                    <p class="main-visual-box-date top-menu-box-date"> <time
+                                                            datetime="2022-09-01"></time>2022-09-01
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </article>
+                                    </div>
+                                    <div class="news-category-others">
+                                        <article class="main-visual-card">
+                                            <a href="" class="main-visual-card-link top-menu-card-link">
+                                                <div class="main-visual-card-link-img top-news-card-link-img">
+                                                    <img src="/img/TOP/img_card.png" alt=""
+                                                        class="main-visual-card-img top-news-card-img">
+                                                </div>
+                                                <div class="main-visual-card-link-content top-news-card-link-content">
+                                                    <p class="main-visual-box-text top-menu-box-text">
+                                                        最新複製 #2 複製 #cat4 h1タイトル_ダミークリー... </p>
+                                                    <p class="main-visual-box-date top-menu-box-date"> <time
+                                                            datetime="2022-09-01"></time>2022-09-01
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </article>
+                                    </div>
+                                    <div class="news-category-others">
+                                        <article class="main-visual-card">
+                                            <a href="" class="main-visual-card-link top-menu-card-link">
+                                                <div class="main-visual-card-link-img top-news-card-link-img">
+                                                    <img src="/img/TOP/img_card.png" alt=""
+                                                        class="main-visual-card-img top-news-card-img">
+                                                </div>
+                                                <div class="main-visual-card-link-content top-news-card-link-content">
+                                                    <p class="main-visual-box-text top-menu-box-text">
+                                                        最新複製 #2 複製 #cat4 h1タイトル_ダミークリー... </p>
+                                                    <p class="main-visual-box-date top-menu-box-date"> <time
+                                                            datetime="2022-09-01"></time>2022-09-01
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </article>
+                                    </div>
+                                    <div class="news-category-others">
+                                        <article class="main-visual-card">
+                                            <a href="" class="main-visual-card-link top-menu-card-link">
+                                                <div class="main-visual-card-link-img top-news-card-link-img">
+                                                    <img src="/img/TOP/img_card.png" alt=""
+                                                        class="main-visual-card-img top-news-card-img">
+                                                </div>
+                                                <div class="main-visual-card-link-content top-news-card-link-content">
+                                                    <p class="main-visual-box-text top-menu-box-text">
+                                                        最新複製 #2 複製 #cat4 h1タイトル_ダミークリー... </p>
+                                                    <p class="main-visual-box-date top-menu-box-date"> <time
+                                                            datetime="2022-09-01"></time>2022-09-01
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </article>
+                                    </div>
+                                    <div class="news-category-others">
+                                        <article class="main-visual-card">
+                                            <a href="" class="main-visual-card-link top-menu-card-link">
+                                                <div class="main-visual-card-link-img top-news-card-link-img">
+                                                    <img src="/img/TOP/img_card.png" alt=""
+                                                        class="main-visual-card-img top-news-card-img">
+                                                </div>
+                                                <div class="main-visual-card-link-content top-news-card-link-content">
+                                                    <p class="main-visual-box-text top-menu-box-text">
+                                                        最新複製 #2 複製 #cat4 h1タイトル_ダミークリー... </p>
+                                                    <p class="main-visual-box-date top-menu-box-date"> <time
+                                                            datetime="2022-09-01"></time>2022-09-01
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- カテゴリー一覧 -->
+                        <div class="news-sm-category-wrapper">
+                            <div class="news-category-title-box">
+                                <h2 class="news-category-title">
+                                    カテゴリ
+                                </h2>
+                            </div>
+                            <div class="news-sm-category-box">
+                                <div class="news-category-sm-list">
+                                    <a href="" class="news-category-sm-link">
+                                        カテゴリ名
+                                    </a>
+                                </div>
+                                <div class="news-category-sm-list">
+                                    <a href="" class="news-category-sm-link">
+                                        カテゴリ名
+                                    </a>
+                                </div>
+                                <div class="news-category-sm-list">
+                                    <a href="" class="news-category-sm-link">
+                                        カテゴリ名
+                                    </a>
+                                </div>
+                                <div class="news-category-sm-list">
+                                    <a href="" class="news-category-sm-link">
+                                        カテゴリ名
+                                    </a>
+                                </div>
+                                <div class="news-category-sm-list">
+                                    <a href="" class="news-category-sm-link">
+                                        カテゴリ名
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+            </div>
+            <!-- アクセス -->
+            <div class="access-lg-wrapper access-lg-wrapper-concept ">
+                <section class="access">
+                    <div class="access-wrapper">
+                        <h2 class="h2-title access-title">ACCESS</h2>
+                        <p class="h2-subtitle">アクセス</p>
+                        <div class="access-bg-box">
+                            <div class="access-sub-wrapper">
+                                <div class="access-map">
+                                    <div class="access-map-container">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.037028863611!2d139.578023915201!3d35.70070638651103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018ee39b555205f%3A0xabb26a0a2fbda595!2z44CSMTgwLTAwMDMg5p2x5Lqs6YO95q2m6JS16YeO5biC5ZCJ56Wl5a-65Y2X55S677yR5LiB55uu!5e0!3m2!1sja!2sjp!4v1659531177336!5m2!1sja!2sjp"
+                                            width="600" height="450" style="border:0;" allowfullscreen=""
+                                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                </div>
+                                <div class="access-tables">
+                                    <dl class="access-table-box">
+                                        <div class="access-table-item">
+                                            <dt class="access-table-content">住所</dt>
+                                            <dd class="access-table-description">〒000-0000 <br>
+                                                東京都武蔵野市吉祥寺南町一丁目</dd>
+                                        </div>
+                                        <div class="access-table-item">
+                                            <dt class="access-table-content">TEL</dt>
+                                            <dd class="access-table-description">0123-456-789</dd>
+                                        </div>
+                                        <div class="access-table-item">
+                                            <dt class="access-table-content">Mail</dt>
+                                            <dd class="access-table-description">example@mail.com</dd>
+                                        </div>
+                                    </dl>
+                                    <dl class="access-table-box">
+                                        <div class="access-table-item">
+                                            <dt class="access-table-content">営業時間</dt>
+                                            <dd class="access-table-description">7:00〜21:00 <br>
+                                                ※ラストオーダー 20:30</dd>
+                                        </div>
+                                        <div class="access-table-item">
+                                            <dt class="access-table-content">定休日</dt>
+                                            <dd class="access-table-description">水曜日</dd>
+                                        </div>
+                                        <div class="access-table-item">
+                                            <dt class="access-table-content">座席</dt>
+                                            <dd class="access-table-description">テーブル20席 ／ カウンター席6席</dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- フッター -->
+        <footer class="footer">
+            <div class="footer-container">
+                <a href="" class="pagetop">
+                    <img src="/img/icons/icon_arrow-top.png" alt="page-top">
+                </a>
+                <!-- <div class="footer-pagetop">
+                    <a href="" class="footer-pagetop-link is-show">
+                        <img src="/img/icons/icon_arrow-top.png" alt="page-top">
+                    </a>
+                </div> -->
+                <div class="main-sns">
+                    <ul class="main-sns-list">
+                        <li class="main-sns-item">
+                            <i class="fa-brands fa-twitter main-sns-item-link" aria-label="twitter"></i>
+                        </li>
+                        <li class="main-sns-item">
+                            <i class="fa-brands fa-instagram main-sns-item-link" aria-label="facebook"></i>
+                        </li>
+                        <li class="main-sns-item">
+                            <i class="fa-brands fa-youtube main-sns-item-link" aria-label="youtube"></i>
+                        </li>
+                    </ul>
+                </div>
+                <p class="footer-text">&copy;2000-2021 open cafe. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+    </div>
+    <!-- スライダーカーセル、 -->
+    <script src="https: ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https: cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
+    <script src="/JS/wow.js"></script><!-- Script.jsより上に置く -->
+    <script src="/JS/style.js"></script>
+</body>
+
+</html>

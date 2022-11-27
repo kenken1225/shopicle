@@ -1,0 +1,59 @@
+
+<header id="js-header" class="header">
+    <div id="js-drawer-bg" class="drawer-bg"></div>
+    <div id="header" class="header-container">
+        <p class="header-logo">
+            <a href="#" class="header-logo-link"></a>
+        </p>
+        <nav class="header-nav-menu" id="nav-active">
+            <ul class="header-nav">
+                {% for link in linklists[ section.settings.menu ].links %}
+                    <li class="header-nav-item">
+                        <a href="{{ link.url }}" class="header-nav-item-link">
+                            <span class="header-nav-item-en">{{ link.title | split: '/' | first }}</span>
+                            <span class="header-nav-item-jp">{{ link.title | split: '/' | last }}</span>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
+        <div class="header-sns">
+            <ul class="header-sns-list">
+                <li class="header-sns-item">
+                    <i class="fa-brands fa-twitter header-sns-item-link" aria-label="twitter"></i>
+                </li>
+                <li class="header-sns-item">
+                    <i class="fa-brands fa-instagram header-sns-item-link" aria-label="facebook"></i>
+                </li>
+                <li class="header-sns-item">
+                    <i class="fa-brands fa-youtube header-sns-item-link" aria-label="youtube"></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+
+<style>
+
+    .header-nav-item-jp{
+        font-size: 16px;
+    }
+
+</style>
+
+
+
+{%- schema -%}
+    {
+        "name": "header",
+        "settings": [
+            {
+                "type": "link_list",
+                "id": "menu",
+                "default": "main-menu",
+                "label": "t:sections.header.settings.menu.label"
+            }
+    ]
+    }
+{%- endschema -%}
